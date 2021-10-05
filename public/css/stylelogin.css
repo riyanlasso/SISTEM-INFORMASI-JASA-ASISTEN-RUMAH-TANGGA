@@ -1,0 +1,284 @@
+.mediaViewInfo {
+    --web-view-name: LOGIN;
+    --web-view-id: LOGIN;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: LOGIN;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#LOGIN {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(69, 92, 117, 1);
+    overflow: hidden;
+    --web-view-name: LOGIN;
+    --web-view-id: LOGIN;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#Rectangle_5 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    width: 1526px;
+    height: 978px;
+    left: 195px;
+    top: 51px;
+}
+
+#morning {
+    position: absolute;
+    width: 1530px;
+    height: 965px;
+    left: 187px;
+    top: 60px;
+    overflow: visible;
+}
+
+#MYSERVANT_d {
+    left: 742px;
+    top: 159px;
+    position: absolute;
+    overflow: visible;
+    width: 321px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#broom_d {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: 1068px;
+    top: 137px;
+    overflow: visible;
+}
+
+#pngwingcom_1 {
+    position: absolute;
+    width: 400px;
+    height: 348px;
+    left: 236px;
+    top: 439px;
+    overflow: visible;
+}
+
+#servant_2 {
+    position: absolute;
+    width: 478px;
+    height: 702px;
+    left: 609px;
+    top: 262px;
+    overflow: visible;
+}
+
+#Rectangle_6 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_6 {
+    position: absolute;
+    overflow: visible;
+    width: 401px;
+    height: 480px;
+    left: 1140px;
+    top: 315px;
+}
+
+#Rectangle_7 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_7 {
+    position: absolute;
+    overflow: visible;
+    width: 328px;
+    height: 54px;
+    left: 1175px;
+    top: 470px;
+}
+
+#Rectangle_8 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_8 {
+    position: absolute;
+    overflow: visible;
+    width: 328px;
+    height: 54px;
+    left: 1175px;
+    top: 556px;
+}
+
+#Path_2 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Path_2 {
+    overflow: visible;
+    position: absolute;
+    width: 164px;
+    height: 54px;
+    left: 1257px;
+    top: 642px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: HALAMAN_UTAMA_SESUDAH_LOGIN_.html;
+    cursor: pointer;
+}
+
+#LOGIN_d {
+    left: 1299px;
+    top: 653px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: HALAMAN_UTAMA_SESUDAH_LOGIN_.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#not_registered {
+    left: 1254px;
+    top: 699px;
+    position: absolute;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#REGISTER {
+    left: 1350px;
+    top: 699px;
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: PILIH_REGISTER.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(239, 146, 34, 1);
+}
+
+#username {
+    left: 1296px;
+    top: 480px;
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#password {
+    left: 1296px;
+    top: 565px;
+    position: absolute;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#broom_ed {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: 1284px;
+    top: 328px;
+    overflow: visible;
+}

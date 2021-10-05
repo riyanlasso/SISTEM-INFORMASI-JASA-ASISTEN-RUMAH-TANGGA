@@ -1,0 +1,275 @@
+
+		.mediaViewInfo {
+			--web-view-name: REGISTER AGEN PENYALUR;
+			--web-view-id: REGISTER_AGEN_PENYALUR;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		:root {
+			--web-view-ids: REGISTER_AGEN_PENYALUR;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			border: none;
+		}
+
+		#REGISTER_AGEN_PENYALUR {
+			position: absolute;
+			width: 1920px;
+			height: 1080px;
+			background-color: rgba(69, 92, 117, 1);
+			overflow: hidden;
+			--web-view-name: REGISTER AGEN PENYALUR;
+			--web-view-id: REGISTER_AGEN_PENYALUR;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		#Rectangle_5_ib {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 5px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_5_ib {
+			position: absolute;
+			overflow: visible;
+			width: 1515px;
+			height: 850px;
+			left: 202px;
+			top: 114px;
+		}
+
+		#REGISTER_AGEN_PENYALUR_ic {
+			left: 487px;
+			top: 159px;
+			position: absolute;
+			overflow: visible;
+			width: 677px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 50px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#broom_id {
+			position: absolute;
+			width: 111px;
+			height: 111px;
+			left: 1185px;
+			top: 137px;
+			overflow: visible;
+		}
+
+		#Path_3_ie {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 4px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Path_3_ie {
+			overflow: visible;
+			position: absolute;
+			width: 885px;
+			height: 655px;
+			left: 300px;
+			top: 248px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#Rectangle_20_if {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 4px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_20_if {
+			position: absolute;
+			overflow: visible;
+			width: 377px;
+			height: 85px;
+			left: 1251px;
+			top: 849px;
+		}
+
+		#SUBMIT_ig {
+			left: 1359px;
+			top: 865px;
+			position: absolute;
+			overflow: visible;
+			width: 163px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 40px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#company_ih {
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			left: 1215px;
+			top: 315px;
+			overflow: visible;
+		}
+
+		#Nama__Agen_ {
+			left: 368px;
+			top: 315px;
+			position: absolute;
+			overflow: visible;
+			width: 211px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Alamat___ij {
+			left: 368px;
+			top: 372px;
+			position: absolute;
+			overflow: visible;
+			width: 139px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Email__ {
+			left: 368px;
+			top: 429px;
+			position: absolute;
+			overflow: visible;
+			width: 112px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Dokumen_SIUP__ {
+			left: 368px;
+			top: 651px;
+			position: absolute;
+			overflow: visible;
+			width: 261px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Image_1_im {
+			position: absolute;
+			width: 242px;
+			height: 30px;
+			left: 625px;
+			top: 661px;
+			overflow: visible;
+		}
+
+		#Penanggung_Jawab__ {
+			left: 368px;
+			top: 708px;
+			position: absolute;
+			overflow: visible;
+			width: 330px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Image_1_io {
+			position: absolute;
+			width: 242px;
+			height: 30px;
+			left: 704px;
+			top: 722px;
+			overflow: visible;
+		}
+
+		#No_Telepon___ip {
+			left: 368px;
+			top: 483px;
+			position: absolute;
+			overflow: visible;
+			width: 206px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Username___iq {
+			left: 368px;
+			top: 540px;
+			position: absolute;
+			overflow: visible;
+			width: 183px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#Password___ir {
+			left: 368px;
+			top: 594px;
+			position: absolute;
+			overflow: visible;
+			width: 174px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 33px;
+			color: rgba(0, 0, 0, 1);
+		}
+	

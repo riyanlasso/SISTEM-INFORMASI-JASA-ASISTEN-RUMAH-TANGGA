@@ -1,0 +1,351 @@
+
+		.mediaViewInfo {
+			--web-view-name: PILIH REGISTER;
+			--web-view-id: PILIH_REGISTER;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		:root {
+			--web-view-ids: PILIH_REGISTER;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			border: none;
+		}
+
+		#PILIH_REGISTER {
+			position: absolute;
+			width: 1920px;
+			height: 1080px;
+			background-color: rgba(69, 92, 117, 1);
+			overflow: hidden;
+			--web-view-name: PILIH REGISTER;
+			--web-view-id: PILIH_REGISTER;
+			--web-scale-on-resize: true;
+			--web-enable-deep-linking: true;
+		}
+
+		@keyframes fadein {
+
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+
+		}
+
+		#Rectangle_5_iu {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 5px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_5_iu {
+			position: absolute;
+			overflow: visible;
+			width: 1526px;
+			height: 978px;
+			left: 195px;
+			top: 51px;
+		}
+
+		#morning_iv {
+			position: absolute;
+			width: 1530px;
+			height: 965px;
+			left: 187px;
+			top: 60px;
+			overflow: visible;
+		}
+
+		#MYSERVANT_iw {
+			left: 742px;
+			top: 159px;
+			position: absolute;
+			overflow: visible;
+			width: 321px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 50px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#broom_ix {
+			position: absolute;
+			width: 111px;
+			height: 111px;
+			left: 1068px;
+			top: 137px;
+			overflow: visible;
+		}
+
+		#pngwingcom_1_iy {
+			position: absolute;
+			width: 400px;
+			height: 348px;
+			left: 236px;
+			top: 439px;
+			overflow: visible;
+		}
+
+		#servant_2_iz {
+			position: absolute;
+			width: 478px;
+			height: 702px;
+			left: 609px;
+			top: 262px;
+			overflow: visible;
+		}
+
+		#Rectangle_6_i {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 4px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_6_i {
+			position: absolute;
+			overflow: visible;
+			width: 401px;
+			height: 480px;
+			left: 1140px;
+			top: 315px;
+		}
+
+		#Rectangle_7_i {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 2px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_7_i {
+			position: absolute;
+			overflow: visible;
+			width: 328px;
+			height: 54px;
+			left: 1175px;
+			top: 470px;
+		}
+
+		#Rectangle_8_i {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 2px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_8_i {
+			position: absolute;
+			overflow: visible;
+			width: 328px;
+			height: 54px;
+			left: 1175px;
+			top: 556px;
+		}
+
+		#Path_2_i {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(0, 0, 0, 1);
+			stroke-width: 2px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Path_2_i {
+			overflow: visible;
+			position: absolute;
+			width: 164px;
+			height: 54px;
+			left: 1257px;
+			top: 642px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#LOGIN_i {
+			left: 1299px;
+			top: 653px;
+			position: absolute;
+			overflow: visible;
+			width: 82px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 25px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#not_registered_i {
+			left: 1254px;
+			top: 699px;
+			position: absolute;
+			overflow: visible;
+			width: 97px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#REGISTER_i {
+			left: 1350px;
+			top: 699px;
+			position: absolute;
+			overflow: visible;
+			width: 63px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			color: rgba(239, 146, 34, 1);
+		}
+
+		#username_i {
+			left: 1296px;
+			top: 480px;
+			position: absolute;
+			overflow: visible;
+			width: 90px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: italic;
+			font-weight: normal;
+			font-size: 21px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#password_i {
+			left: 1296px;
+			top: 565px;
+			position: absolute;
+			overflow: visible;
+			width: 87px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: italic;
+			font-weight: normal;
+			font-size: 21px;
+			color: rgba(0, 0, 0, 1);
+		}
+
+		#broom_i {
+			position: absolute;
+			width: 111px;
+			height: 111px;
+			left: 1284px;
+			top: 328px;
+			overflow: visible;
+		}
+
+		#Rectangle_21 {
+			opacity: 0.5;
+			fill: rgba(0, 0, 0, 1);
+			stroke: rgba(112, 112, 112, 1);
+			stroke-width: 1px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_21 {
+			position: absolute;
+			overflow: visible;
+			width: 1920px;
+			height: 1080px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Rectangle_22 {
+			fill: rgba(255, 255, 255, 1);
+			stroke: rgba(112, 112, 112, 1);
+			stroke-width: 1px;
+			stroke-linejoin: miter;
+			stroke-linecap: butt;
+			stroke-miterlimit: 4;
+			shape-rendering: auto;
+		}
+
+		.Rectangle_22 {
+			position: absolute;
+			overflow: visible;
+			width: 168px;
+			height: 67px;
+			left: 1350px;
+			top: 720px;
+		}
+
+		#REGISTER_CUSTOMER_jc {
+			left: 1378px;
+			top: 734px;
+			position: absolute;
+			overflow: visible;
+			width: 113px;
+			white-space: nowrap;
+			--web-animation: fadein 0.3s ease-out;
+			--web-action-type: page;
+			--web-action-target: REGISTER_CUSTOMER.html;
+			cursor: pointer;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 11px;
+			color: rgba(239, 146, 34, 1);
+		}
+
+		#REGISTER_AGEN_ART {
+			left: 1378px;
+			top: 754px;
+			position: absolute;
+			overflow: visible;
+			width: 108px;
+			white-space: nowrap;
+			--web-animation: fadein 0.3s ease-out;
+			--web-action-type: page;
+			--web-action-target: REGISTER_AGEN_PENYALUR.html;
+			cursor: pointer;
+			text-align: left;
+			font-family: Segoe UI;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 11px;
+			color: rgba(239, 146, 34, 1);
+		}
+	

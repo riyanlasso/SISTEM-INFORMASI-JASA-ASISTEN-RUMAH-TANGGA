@@ -1,0 +1,338 @@
+.mediaViewInfo {
+    --web-view-name: REGISTER CUSTOMER;
+    --web-view-id: REGISTER_CUSTOMER;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: REGISTER_CUSTOMER;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#REGISTER_CUSTOMER {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(69, 92, 117, 1);
+    overflow: hidden;
+    --web-view-name: REGISTER CUSTOMER;
+    --web-view-id: REGISTER_CUSTOMER;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#Rectangle_5_hp {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_5_hp {
+    position: absolute;
+    overflow: visible;
+    width: 1515px;
+    height: 850px;
+    left: 202px;
+    top: 114px;
+}
+
+#REGISTER_CUSTOMER_hq {
+    left: 625px;
+    top: 159px;
+    position: absolute;
+    overflow: visible;
+    width: 530px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#broom_hr {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: 1185px;
+    top: 137px;
+    overflow: visible;
+}
+
+#Path_3 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Path_3 {
+    overflow: visible;
+    position: absolute;
+    width: 885px;
+    height: 655px;
+    left: 300px;
+    top: 248px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Rectangle_20 {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Rectangle_20 {
+    position: absolute;
+    overflow: visible;
+    width: 377px;
+    height: 85px;
+    left: 1251px;
+    top: 849px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: HALAMAN_UTAMA_SESUDAH_LOGIN_.html;
+    cursor: pointer;
+}
+
+#SUBMIT {
+    left: 1359px;
+    top: 865px;
+    position: absolute;
+    overflow: visible;
+    width: 163px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: HALAMAN_UTAMA_SESUDAH_LOGIN_.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Umur___hv {
+    left: 344px;
+    top: 495px;
+    position: absolute;
+    overflow: visible;
+    width: 115px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Nama____hw {
+    left: 344px;
+    top: 267px;
+    position: absolute;
+    overflow: visible;
+    width: 129px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Alamat___hx {
+    left: 344px;
+    top: 324px;
+    position: absolute;
+    overflow: visible;
+    width: 139px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#No_Telepon___hy {
+    left: 344px;
+    top: 381px;
+    position: absolute;
+    overflow: visible;
+    width: 206px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Jenis_Kelamin___hz {
+    left: 344px;
+    top: 438px;
+    position: absolute;
+    overflow: visible;
+    width: 239px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Agama___h {
+    left: 344px;
+    top: 552px;
+    position: absolute;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Provinsi___h {
+    left: 344px;
+    top: 609px;
+    position: absolute;
+    overflow: visible;
+    width: 153px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Kota___h {
+    left: 344px;
+    top: 666px;
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#house2 {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1189px;
+    top: 234px;
+    overflow: visible;
+}
+
+#servant_3 {
+    position: absolute;
+    width: 107px;
+    height: 159px;
+    left: 1514px;
+    top: 539px;
+    overflow: visible;
+}
+
+#Upload_Foto_Profil__ {
+    left: 344px;
+    top: 834px;
+    position: absolute;
+    overflow: visible;
+    width: 313px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Image_1_h {
+    position: absolute;
+    width: 242px;
+    height: 30px;
+    left: 656px;
+    top: 841px;
+    overflow: visible;
+}
+
+#Username__ {
+    left: 344px;
+    top: 723px;
+    position: absolute;
+    overflow: visible;
+    width: 183px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#Password__ {
+    left: 344px;
+    top: 777px;
+    position: absolute;
+    overflow: visible;
+    width: 174px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+}
