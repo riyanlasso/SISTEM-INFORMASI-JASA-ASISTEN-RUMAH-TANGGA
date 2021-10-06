@@ -11,9 +11,9 @@
 
 <body>
 	<div id="HALAMAN_UTAMA_SESUDAH_LOGIN_">
-		<img id="texture_bp" src="texture_bp.png" srcset="texture_bp.png 1x, texture_bp@2x.png 2x">
+		<img id="texture_bp" src="{{URL('/img/texture_bp.png')}}">
 
-		<img id="house_bq" src="house_bq.png" srcset="house_bq.png 1x, house_bq@2x.png 2x">
+		<img id="house_bq" src="{{URL('/img/house_bq.png')}}">
 
 		<svg class="Rectangle_1_br">
 			<rect id="Rectangle_1_br" rx="50" ry="50" x="0" y="0" width="796" height="731">
@@ -23,7 +23,7 @@
 			<rect id="Rectangle_2_bs" rx="50" ry="50" x="0" y="0" width="765" height="696">
 			</rect>
 		</svg>
-		<img id="servant_bt" src="servant_bt.png" srcset="servant_bt.png 1x, servant_bt@2x.png 2x">
+		<img id="servant_bt" src="{{URL('/img/servant_bt.png')}}">
 
 		<div id="Navbar_bu">
 			<svg class="Rectangle_16_bv">
@@ -42,9 +42,9 @@
 			<div id="HOME_bz">
 				<span>HOME</span>
 			</div>
-			<img id="broom_b" src="broom_b.png" srcset="broom_b.png 1x, broom_b@2x.png 2x">
+			<img id="broom_b" src="{{URL('/img/broom_b.png')}}">
 
-			<img id="search_bar_2_b" src="search_bar_2_b.png" srcset="search_bar_2_b.png 1x, search_bar_2_b@2x.png 2x">
+			<img id="search_bar_2_b" src="{{URL('/img/search_bar_2_b.png')}}">
 
 			<div id="Search____b">
 				<span>Search . . .</span>
@@ -56,7 +56,7 @@
 			<div onclick="application.goToTargetView(event)" id="ABOUT_US_b">
 				<span>ABOUT US</span>
 			</div>
-			<img onclick="application.goToTargetView(event)" id="user" src="user.png" srcset="user.png 1x, user@2x.png 2x">
+			<img onclick="application.goToTargetView(event)" id="user" src="{{URL('/img/user.png')}}" srcset="user.png 1x, user@2x.png 2x">
 
 		</div>
 	</div>
