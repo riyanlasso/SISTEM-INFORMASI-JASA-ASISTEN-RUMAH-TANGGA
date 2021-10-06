@@ -1,0 +1,753 @@
+.mediaViewInfo {
+    --web-view-name: HALAMAN DAFTAR PEKERJA  -> Transaksi;
+    --web-view-id: HALAMAN_DAFTAR_PEKERJA__-_Transaksi;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: HALAMAN_DAFTAR_PEKERJA__-_Transaksi;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#HALAMAN_DAFTAR_PEKERJA__-_Transaksi {
+    position: absolute;
+    width: 1920px;
+    height: 1592px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: HALAMAN DAFTAR PEKERJA  -> Transaksi;
+    --web-view-id: HALAMAN_DAFTAR_PEKERJA__-_Transaksi;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+#texture_f {
+    position: absolute;
+    width: 1916px;
+    height: 1492px;
+    left: 2px;
+    top: 0px;
+    overflow: visible;
+}
+#DAFTAR_PEKERJA_PERSEORANGAN {
+    left: 119px;
+    top: 230px;
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    color: rgba(0,0,0,1);
+}
+#Line_2_f {
+    fill: transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_2_f {
+    overflow: visible;
+    position: absolute;
+    width: 664px;
+    height: 3px;
+    left: 117.5px;
+    top: 293.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Group_1 {
+    position: absolute;
+    width: 1741px;
+    height: 266px;
+    left: 118px;
+    top: 339px;
+    overflow: visible;
+}
+#Rectangle_19 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_19 {
+    position: absolute;
+    overflow: visible;
+    width: 1741px;
+    height: 266px;
+    left: 0px;
+    top: 0px;
+}
+#Nama____gc {
+    left: 339px;
+    top: 24px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Alamat___gd {
+    left: 339px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#No_Telepon___ge {
+    left: 339px;
+    top: 138px;
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Pengalaman_Kerja___ {
+    left: 339px;
+    top: 195px;
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Group_2 {
+    position: absolute;
+    width: 1741px;
+    height: 266px;
+    left: 119px;
+    top: 651px;
+    overflow: visible;
+}
+#Rectangle_19_gh {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_19_gh {
+    position: absolute;
+    overflow: visible;
+    width: 1741px;
+    height: 266px;
+    left: 0px;
+    top: 0px;
+}
+#Nama____gi {
+    left: 338px;
+    top: 24px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Alamat___gj {
+    left: 338px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#No_Telepon___ {
+    left: 338px;
+    top: 138px;
+    position: absolute;
+    overflow: visible;
+    width: 228px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Pengalaman_Kerja____gl {
+    left: 338px;
+    top: 195px;
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Group_3 {
+    position: absolute;
+    width: 1741px;
+    height: 266px;
+    left: 118px;
+    top: 963px;
+    overflow: visible;
+}
+#Rectangle_19_gn {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_19_gn {
+    position: absolute;
+    overflow: visible;
+    width: 1741px;
+    height: 266px;
+    left: 0px;
+    top: 0px;
+}
+#Nama__ {
+    left: 339px;
+    top: 24px;
+    position: absolute;
+    overflow: visible;
+    width: 127px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Alamat___gp {
+    left: 339px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#No_Telepon___gq {
+    left: 339px;
+    top: 138px;
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Pengalaman_Kerja___gr {
+    left: 339px;
+    top: 195px;
+    position: absolute;
+    overflow: visible;
+    width: 325px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Group_4 {
+    position: absolute;
+    width: 1741px;
+    height: 1180px;
+    left: 118px;
+    top: 361px;
+    overflow: visible;
+}
+#Rectangle_19_gt {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_19_gt {
+    position: absolute;
+    overflow: visible;
+    width: 1741px;
+    height: 266px;
+    left: 0px;
+    top: 914px;
+}
+#Nama___gu {
+    left: 339px;
+    top: 938px;
+    position: absolute;
+    overflow: visible;
+    width: 127px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Alamat___gv {
+    left: 339px;
+    top: 995px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#No_Telepon___gw {
+    left: 339px;
+    top: 1052px;
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Pengalaman_Kerja____gx {
+    left: 339px;
+    top: 1109px;
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#user_1 {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 55px;
+    top: 0px;
+    overflow: visible;
+}
+#user_1_gz {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 55px;
+    top: 311px;
+    overflow: visible;
+}
+#user_1_g {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 55px;
+    top: 623px;
+    overflow: visible;
+}
+#user_1_ha {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 55px;
+    top: 935px;
+    overflow: visible;
+}
+#Path_4 {
+    fill: rgba(71,255,89,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_4 {
+    overflow: visible;
+    position: absolute;
+    width: 306px;
+    height: 91px;
+    left: 1409px;
+    top: 66px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_5 {
+    fill: rgba(71,255,89,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5 {
+    overflow: visible;
+    position: absolute;
+    width: 306px;
+    height: 91px;
+    left: 1409px;
+    top: 378px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6 {
+    fill: rgba(71,255,89,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6 {
+    overflow: visible;
+    position: absolute;
+    width: 306px;
+    height: 91px;
+    left: 1409px;
+    top: 690px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_7 {
+    fill: rgba(71,255,89,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_7 {
+    overflow: visible;
+    position: absolute;
+    width: 306px;
+    height: 91px;
+    left: 1409px;
+    top: 1002px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#CONTRACT {
+    left: 1475px;
+    top: 88px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: TAMPILAN_CONTRACT.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#CONTRACT_g {
+    left: 1475px;
+    top: 400px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: TAMPILAN_CONTRACT.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#CONTRACT_ha {
+    left: 1475px;
+    top: 712px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: TAMPILAN_CONTRACT.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#CONTRACT_hb {
+    left: 1475px;
+    top: 1024px;
+    position: absolute;
+    overflow: visible;
+    width: 186px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: TAMPILAN_CONTRACT.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(0,0,0,1);
+}
+#Rectangle_24 {
+    fill: rgba(238,215,12,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_24 {
+    position: absolute;
+    overflow: visible;
+    width: 389px;
+    height: 118px;
+    left: 1470px;
+    top: 206px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: LOWONGAN_.html;
+    cursor: pointer;
+}
+#Navbar_hb {
+    position: absolute;
+    width: 1920px;
+    height: 425px;
+    left: 0px;
+    top: -143px;
+    overflow: visible;
+}
+#Rectangle_16_hc {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_16_hc {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 125px;
+    left: 0px;
+    top: 143px;
+}
+#AGEN_ART_hd {
+    left: 1200px;
+    top: 189px;
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: rgba(0,0,0,1);
+}
+#LOWONGAN_he {
+    left: 1418px;
+    top: 189px;
+    position: absolute;
+    overflow: visible;
+    width: 205px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: rgba(0,0,0,1);
+}
+#MYSERVANT_hf {
+    left: 81px;
+    top: 172px;
+    position: absolute;
+    overflow: visible;
+    width: 321px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0,0,0,1);
+}
+#HOME_hg {
+    filter: drop-shadow(7px 5px 6px rgba(0, 0, 0, 0.161));
+    left: 1047px;
+    top: 189px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: rgba(0,0,0,1);
+}
+#broom_hh {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: 407px;
+    top: 150px;
+    overflow: visible;
+}
+#search_bar_2_hi {
+    position: absolute;
+    width: 425px;
+    height: 425px;
+    left: 572px;
+    top: 0px;
+    overflow: visible;
+}
+#Search____hj {
+    left: 710px;
+    top: 187px;
+    position: absolute;
+    overflow: visible;
+    width: 151px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(0,0,0,1);
+}
+#user_hk {
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    left: 1765px;
+    top: 149px;
+    overflow: visible;
+}
+#Path_1_hl {
+    fill: rgba(0,0,0,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_1_hl {
+    overflow: visible;
+    position: absolute;
+    width: 1920px;
+    height: 5px;
+    left: 0px;
+    top: 270.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#DAFTAR {
+    left: 1584px;
+    top: 229px;
+    position: absolute;
+    overflow: visible;
+    width: 162px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: LOWONGAN_.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Agency FB;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    color: rgba(0,0,0,1);
+}

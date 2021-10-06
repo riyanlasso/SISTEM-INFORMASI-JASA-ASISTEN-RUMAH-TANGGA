@@ -17,16 +17,16 @@
 		<rect id="Rectangle_5_uk" rx="98" ry="98" x="0" y="0" width="1526" height="978">
 		</rect>
 	</svg>
-	<img id="morning_ul" src="morning_ul.png" srcset="morning_ul.png 1x, morning_ul@2x.png 2x">
+	<img id="morning_ul" src="{{URL('/img/morning_ul.png')}}" srcset="morning_ul.png 1x, morning_ul@2x.png 2x">
 		
 	<div id="MYSERVANT_um">
 		<span>MYSERVANT</span>
 	</div>
-	<img id="broom_un" src="broom_un.png" srcset="broom_un.png 1x, broom_un@2x.png 2x">
+	<img id="broom_un" src="{{URL('/img/broom_un.png')}}" srcset="broom_un.png 1x, broom_un@2x.png 2x">
 		
-	<img id="pngwingcom_1_uo" src="pngwingcom_1_uo.png" srcset="pngwingcom_1_uo.png 1x, pngwingcom_1_uo@2x.png 2x">
+	<img id="pngwingcom_1_uo" src="{{URL('/img/pngwingcom_1_uo.png')}}" srcset="pngwingcom_1_uo.png 1x, pngwingcom_1_uo@2x.png 2x">
 		
-	<img id="servant_2_up" src="servant_2_up.png" srcset="servant_2_up.png 1x, servant_2_up@2x.png 2x">
+	<img id="servant_2_up" src="{{URL('/img/servant_2_up.png')}}" srcset="servant_2_up.png 1x, servant_2_up@2x.png 2x">
 		
 	<svg class="Rectangle_6_uq">
 		<rect id="Rectangle_6_uq" rx="36" ry="36" x="0" y="0" width="401" height="601">
@@ -59,7 +59,7 @@
 	<div id="password_uy">
 		<span>password</span>
 	</div>
-	<img id="broom_uz" src="broom_uz.png" srcset="broom_uz.png 1x, broom_uz@2x.png 2x">
+	<img id="broom_uz" src="{{URL('/img/broom_uz.png'}}" srcset="broom_uz.png 1x, broom_uz@2x.png 2x">
 		
 	<svg class="Path_10" viewBox="0 0 328 33.688">
 		<path id="Path_10" d="M 0 0 L 328 0 L 328 33.6884765625 L 0 33.6884765625 L 0 0 Z">
