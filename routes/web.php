@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\logincontroller;
 use App\Http\Controllers\pilihcontroller;
 use App\Http\Controllers\registercontroller;
+use App\Http\Controllers\MahasiswaController;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -37,4 +38,5 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [aboutuscontroller::class, 'index']);
-Route::resource('agens', agencontroller::class);
+// Route::resource('agens', agencontroller::class);
+Route::resource('mahasiswas', MahasiswaController::class);
