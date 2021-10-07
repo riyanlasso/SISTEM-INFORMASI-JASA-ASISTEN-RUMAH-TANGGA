@@ -57,7 +57,7 @@
                 <a href="mahasiswas" style="color: black;">AGEN ART</a>
             </div>
             <div id="LOWONGAN_bx">
-                <span>LOWONGAN</span>
+                <a href="lowongan" style="color: black;">LOWONGAN</a>
             </div>
             <div id="MYSERVANT_by">
                 <span>MYSERVANT</span>

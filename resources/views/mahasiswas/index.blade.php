@@ -15,7 +15,7 @@
         <span>MYSERVANT</span>
     </div>
     <div id="HOME_bz">
-        <span>HOME</span>
+        <a href="/" style="color: black;">HOME</a>
     </div>
     <img id="broom_b" src="{{URL('/img/broom_b.png')}}">
 
@@ -35,7 +35,9 @@
     <div class="row" style="margin-top: 300px;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left mt-2">
-                <h2>DAFTAR AGENSI ASISTEN RUMAH TANGGA</h2>
+                <center>
+                    <h2>DAFTAR AGENSI ASISTEN RUMAH TANGGA</h2>
+                </center>
             </div>
             <div class="float-right my-2">
                 <a class="btn btn-success" href="{{ route('mahasiswas.create') }}"> Input Agensi</a>

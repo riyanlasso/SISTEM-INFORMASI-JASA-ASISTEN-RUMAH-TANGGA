@@ -14,11 +14,11 @@
                         <li>{{ $error }}</li> @endforeach
                     </ul>
                 </div> @endif
-                <form method="post" action="{{ route('mahasiswas.update', $Mahasiswa->Nim) }}" id="myForm">
+                <form method="post" action="{{ route('mahasiswas.update', $Mahasiswa->nama) }}" id="myForm">
                     @csrf @method('PUT')
                     <div class="form-group">
                         <label for="Nim">Nim</label>
-                        <input type="text" name="Nim" class="form- control" id="Nim" value="{{ $Mahasiswa->Nim }}" aria- describedby="Nim">
+                        <input type="text" name="Nim" class="form- control" id="Nim" value="{{ $Mahasiswa->nama }}" aria- describedby="Nim">
                     </div>
                     <div class="form-group">
                         <label for="Nama">Nama</label>

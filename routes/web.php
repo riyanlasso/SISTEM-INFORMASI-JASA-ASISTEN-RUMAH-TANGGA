@@ -40,3 +40,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/about', [aboutuscontroller::class, 'index']);
 // Route::resource('agens', agencontroller::class);
 Route::resource('mahasiswas', MahasiswaController::class);
+Route::resource('lowongans', lowongancontroller::class);

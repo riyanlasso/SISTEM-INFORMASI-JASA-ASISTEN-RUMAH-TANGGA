@@ -31,7 +31,7 @@
                     <div class="form-group">
                         <label for="telepon">telepon</label>
 
-                        <input type="telepon" name="telepon" class="form-control" id="telepon" aria-describedby="telepon">
+                        <input type="number" name="telepon" class="form-control" id="telepon" aria-describedby="telepon">
                     </div>
                     <div class="form-group">
                         <label for="dokumen_SIUP">dokumen_SIUP</label>
