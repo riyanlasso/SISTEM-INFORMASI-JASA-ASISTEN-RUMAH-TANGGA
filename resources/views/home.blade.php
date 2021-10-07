@@ -54,7 +54,7 @@
                 </rect>
             </svg>
             <div id="AGEN_ART_bw">
-                <a href="/agen" style="color: black;">AGEN ART</a>
+                <a href="/agens" style="color: black;">AGEN ART</a>
             </div>
             <div id="LOWONGAN_bx">
                 <span>LOWONGAN</span>

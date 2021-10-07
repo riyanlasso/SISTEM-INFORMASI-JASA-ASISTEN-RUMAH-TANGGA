@@ -37,4 +37,4 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [aboutuscontroller::class, 'index']);
-Route::get('/agen', [agencontroller::class, 'index']);
+Route::resource('agens', agencontroller::class);
