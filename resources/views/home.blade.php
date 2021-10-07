@@ -53,10 +53,10 @@
                 <rect id="Rectangle_16_bv" rx="0" ry="0" x="0" y="0" width="1920" height="125">
                 </rect>
             </svg>
-            <div onclick="application.goToTargetView(event)" id="AGEN_ART_bw">
-                <span>AGEN ART</span>
+            <div id="AGEN_ART_bw">
+                <a href="/agen" style="color: black;">AGEN ART</a>
             </div>
-            <div onclick="application.goToTargetView(event)" id="LOWONGAN_bx">
+            <div id="LOWONGAN_bx">
                 <span>LOWONGAN</span>
             </div>
             <div id="MYSERVANT_by">
@@ -69,23 +69,18 @@
 
             <img id="search_bar_2_b" src="{{URL('/img/search_bar_2_b.png')}}">
 
-            <div id="Search____b">
-                <span>Search . . .</span>
-            </div>
             <svg class="Path_1_b" viewBox="0 0 1920 5">
                 <path id="Path_1_b" d="M 0 0 L 1920 0">
                 </path>
             </svg>
 
+            <div id="ABOUT_US_b">
+                <a href="/about" style="color: black;">ABOUT US</a>
+            </div>
 
-            <ul>
-                <div id="ABOUT_US_b">
-                    <a href="/about">ABOUT US</a>
-                </div>
-
-            </ul>
+            <img id="user" src="{{URL('/img/user.png')}}"></img>
         </div>
-        <img id="user" src="{{URL('/img/user.png')}}"></img>
+
     </div>
 
 </body>

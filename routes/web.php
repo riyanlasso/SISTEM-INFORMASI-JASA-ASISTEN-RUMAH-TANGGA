@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\aboutuscontroller;
+use App\Http\Controllers\agencontroller;
 use App\Http\Controllers\homecontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\logincontroller;
 use App\Http\Controllers\pilihcontroller;
 use App\Http\Controllers\registercontroller;
+
 use Illuminate\Support\Facades\Auth;
 
 
@@ -35,3 +37,4 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [aboutuscontroller::class, 'index']);
+Route::get('/agen', [agencontroller::class, 'index']);
