@@ -10,6 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HALAMAN UTAMA SESUDAH LOGIN </title>
     <link rel="stylesheet" type="text/css" href="css/stylehalamanutama.css">
+    <script src="/public/js/javascript.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -56,16 +76,18 @@
                 <path id="Path_1_b" d="M 0 0 L 1920 0">
                 </path>
             </svg>
-            <div onclick="application.goToTargetView(event)" id="ABOUT_US_b">
-                <span>ABOUT US</span>
-            </div>
-            <div>
 
-            </div>
-            <img onclick="application.goToTargetView(event)" id="user" src="{{URL('/img/user.png')}}">
 
+            <ul>
+                <div id="ABOUT_US_b">
+                    <a href="/about">ABOUT US</a>
+                </div>
+
+            </ul>
         </div>
+        <img id="user" src="{{URL('/img/user.png')}}"></img>
     </div>
+
 </body>
 
 </html>
