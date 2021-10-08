@@ -11,7 +11,7 @@
 
 <body>
 	<div id="ABOUT_US">
-		<img id="texture_fk" src="texture_fk.png">
+		<img id="texture_fk" src="{{URL('/img/texture_fk.png')}}" alt="">
 
 		<div id="ABOUT_US_fl">
 			<span>ABOUT US</span>
@@ -38,7 +38,7 @@
 		<div id="BACK_fr">
 			<span>BACK</span>
 		</div>
-		<img id="Image_3" src="Image_3.png" srcset="Image_3.png 1x, Image_3@2x.png 2x">
+		<img id="Image_3" src="{{URL('/img/Image_3.png')}}" alt="">
 
 		<div id="Navbar_ft">
 			<svg class="Rectangle_16_fu">
@@ -57,9 +57,9 @@
 			<div id="HOME_fy">
 				<span>HOME</span>
 			</div>
-			<img id="broom_fz" src="broom_fz.png" srcset="broom_fz.png 1x, broom_fz@2x.png 2x">
+			<img id="broom_fz" src="{{URL('img/broom_fz.png')}}" alt="">
 
-			<img id="search_bar_2_f" src="search_bar_2_f.png" srcset="search_bar_2_f.png 1x, search_bar_2_f@2x.png 2x">
+			<img id="search_bar_2_f" src="{{URL('/img/search_bar_2_f.png')}}" alt="">
 
 			<div id="Search____f">
 				<span>Search . . .</span>
@@ -71,7 +71,7 @@
 			<div id="ABOUT_US_f">
 				<span>ABOUT US</span>
 			</div>
-			<img id="user_f" src="user_f.png" srcset="user_f.png 1x, user_f@2x.png 2x">
+			<img id="user_f" src="{{URL('img/user_f.png')}}" alt="">
 
 		</div>
 	</div>
