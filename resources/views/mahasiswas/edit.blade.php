@@ -1,5 +1,4 @@
-@extends('mahasiswas.layout')
-@section('content')
+@extends('mahasiswas.layout') @section('content')
 <div class="container mt-5">
 
     <div class="row justify-content-center align-items-center">
@@ -15,12 +14,11 @@
                         <li>{{ $error }}</li> @endforeach
                     </ul>
                 </div> @endif
-                <form method="post" action="{{ route('mahasiswas.update', $Mahasiswa-
->Nim) }}" id="myForm">
+                <form method="post" action="{{ route('mahasiswas.update', $Mahasiswa->nama) }}" id="myForm">
                     @csrf @method('PUT')
                     <div class="form-group">
                         <label for="Nim">Nim</label>
-                        <input type="text" name="Nim" class="form- control" id="Nim" value="{{ $Mahasiswa->Nim }}" aria- describedby="Nim">
+                        <input type="text" name="Nim" class="form- control" id="Nim" value="{{ $Mahasiswa->nama }}" aria- describedby="Nim">
                     </div>
                     <div class="form-group">
                         <label for="Nama">Nama</label>
@@ -38,6 +36,14 @@
                         <label for="No_Handphone">No_Handphone</label>
 
                         <input type="No_Handphone" name="No_Handphone" class="form- control" id="No_Handphone" value="{{ $Mahasiswa->No_Handphone }}" aria- describedby="No_Handphone">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="Email" name="Email" class="form- control" id="Email" value="{{ $Mahasiswa->Email }}" aria-describedby="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Tanggal_Lahir">Tanggal_Lahir</label>
+                        <input type="Tanggal_Lahir" name="Tanggal_Lahir" class="form- control" id="Tanggal_Lahir" value="{{ $Mahasiswa->Tanggal_Lahir }}" aria-describedby="Tanggal_Lahir">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
