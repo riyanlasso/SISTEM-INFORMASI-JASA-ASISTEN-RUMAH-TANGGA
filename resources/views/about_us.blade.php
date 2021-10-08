@@ -11,10 +11,10 @@
 
 <body>
 	<div id="ABOUT_US">
-		<img id="texture_fk" src="texture_fk.png">
+		<img id="texture_fk" src="{{URL('/img/texture_fk.png')}}">
 
 		<div id="ABOUT_US_fl">
-			<span>ABOUT US</span>
+			<a href="about" style="color: black;">ABOUT US</a>
 		</div>
 		<svg class="Line_2_fm" viewBox="0 0 199 3">
 			<path id="Line_2_fm" d="M 0 0 L 199 0">
@@ -38,7 +38,7 @@
 		<div id="BACK_fr">
 			<span>BACK</span>
 		</div>
-		<img id="Image_3" src="Image_3.png" srcset="Image_3.png 1x, Image_3@2x.png 2x">
+		<img id="Image_3" src="{{URL('/img/Image_3.png')}}">
 
 		<div id="Navbar_ft">
 			<svg class="Rectangle_16_fu">
@@ -46,20 +46,20 @@
 				</rect>
 			</svg>
 			<div id="AGEN_ART_fv">
-				<span>AGEN ART</span>
+				<a href="mahasiswas" style="color: black;">AGEN ART</a>
 			</div>
 			<div id="LOWONGAN_fw">
-				<span>LOWONGAN</span>
+				<a href="lowongans" style="color: black;">LOWONGAN</a>
 			</div>
 			<div id="MYSERVANT_fx">
 				<span>MYSERVANT</span>
 			</div>
 			<div id="HOME_fy">
-				<span>HOME</span>
+				<a href="home" style="color: black;">HOME</a>
 			</div>
-			<img id="broom_fz" src="broom_fz.png" srcset="broom_fz.png 1x, broom_fz@2x.png 2x">
+			<img id="broom_fz" src="{{URL('/img/broom_fz.png')}}">
 
-			<img id="search_bar_2_f" src="search_bar_2_f.png" srcset="search_bar_2_f.png 1x, search_bar_2_f@2x.png 2x">
+			<img id="search_bar_2_f" src="{{URL('/img/search_bar_2_f.png')}}">
 
 			<div id="Search____f">
 				<span>Search . . .</span>
@@ -71,7 +71,7 @@
 			<div id="ABOUT_US_f">
 				<span>ABOUT US</span>
 			</div>
-			<img id="user_f" src="user_f.png" srcset="user_f.png 1x, user_f@2x.png 2x">
+			<img id="user_f" src="{{URL('/img/user_f.png')}}">
 
 		</div>
 	</div>

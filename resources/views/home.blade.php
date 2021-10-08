@@ -57,13 +57,13 @@
                 <a href="mahasiswas" style="color: black;">AGEN ART</a>
             </div>
             <div id="LOWONGAN_bx">
-                <a href="lowongan" style="color: black;">LOWONGAN</a>
+                <a href="lowongans" style="color: black;">LOWONGAN</a>
             </div>
             <div id="MYSERVANT_by">
                 <span>MYSERVANT</span>
             </div>
             <div id="HOME_bz">
-                <span>HOME</span>
+                <a href="home" style="color: black;">HOME</a>
             </div>
             <img id="broom_b" src="{{URL('/img/broom_b.png')}}">
 

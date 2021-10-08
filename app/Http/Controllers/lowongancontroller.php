@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mahasiswa;
+use App\Models\Art;
 use Illuminate\Http\Request;
 
 class lowongancontroller extends Controller
@@ -19,7 +19,7 @@ class lowongancontroller extends Controller
         // $posts = Mahasiswa::orderBy('Nim', 'desc')->paginate(6);
         // return view('mahasiswas.index', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 5); //mahasiswas adalah nama folder
 
-        $mahasiswas = Mahasiswa::where([
+        $mahasiswas = Art::where([
             ['nama', '!=', Null],
             [function ($query) use ($request) {
                 if (($term = $request->term)) {
@@ -30,13 +30,13 @@ class lowongancontroller extends Controller
             ->orderBy("nama", "asc")
             ->paginate(5);
 
-        $posts = Mahasiswa::orderBy('id', 'desc')->paginate(6);
-        return view('mahasiswas.index', compact('mahasiswas'))
+        $posts = Art::orderBy('id', 'desc')->paginate(6);
+        return view('lowongans.index', compact('mahasiswas'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function create()
     {
-        return view('mahasiswas.create');
+        return view('lowongans.create');
     }
     public function store(Request $request)
     {
@@ -45,33 +45,39 @@ class lowongancontroller extends Controller
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
-            'email' => 'required',
             'telepon' => 'required',
-            'dokumen_SIUP' => 'required',
-            'penanggung_jawab' => 'required',
+            'jenis_kelamin' => 'required',
+            'umur' => 'required',
+            'agama' => 'required',
+            'kota' => 'required',
+            'provinsi' => 'required',
+            'gaji_minimum' => 'required',
+            'gaji_harapan' => 'required',
+            'pengalaman_kerja' => 'required',
+            'upload' => 'required',
         ]);
 
         //fungsi eloquent untuk menambah data 
-        Mahasiswa::create($request->all());
+        Art::create($request->all());
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama 
-        return redirect()->route('mahasiswas.index')
-            ->with('success', 'Agen Berhasil Ditambahkan');
+        return redirect()->route('lowongans.index')
+            ->with('success', 'Lowongan Asisten Rumah Tangga Berhasil Ditambahkan');
     }
 
     public function show($nama)
     {
         //menampilkan detail data dengan menemukan/berdasarkan Nim Mahasiswa
-        $Mahasiswa = Mahasiswa::all()->where('nama', $nama)->first();
-        return view('mahasiswas.detail', ['Mahasiswa' => $Mahasiswa]);
+        $Mahasiswa = Art::all()->where('nama', $nama)->first();
+        return view('lowongans.detail', ['Art' => $Mahasiswa]);
     }
 
     public function edit($nama)
     {
 
         //menampilkan detail data dengan menemukan berdasarkan Nim Mahasiswa untuk diedit
-        $Mahasiswa = Mahasiswa::all()->where('nama', $nama)->first();
-        return view('mahasiswas.edit', compact('Mahasiswa'));
+        $Mahasiswa = Art::all()->where('nama', $nama)->first();
+        return view('lowongans.edit', compact('Mahasiswa'));
     }
 
     public function update(Request $request, $nama)
@@ -80,26 +86,44 @@ class lowongancontroller extends Controller
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
-            'email' => 'required',
             'telepon' => 'required',
-            'dokumen_SIUP' => 'required',
-            'penanggung_jawab' => 'required'
+            'jenis_kelamin' => 'required',
+            'umur' => 'required',
+            'agama' => 'required',
+            'kota' => 'required',
+            'provinsi' => 'required',
+            'gaji_minimum' => 'required',
+            'gaji_harapan' => 'required',
+            'pengalaman_kerja' => 'required',
+            'upload' => 'required',
         ]);
 
         //fungsi eloquent untuk mengupdate data inputan kita 
-        Mahasiswa::find($nama)->update($request->all());
+        $art = Art::all()->where('nama', $nama)->first();
+        $art->nama = request('nama');
+        $art->alamat = request('alamat');
+        $art->telepon = request('telepon');
+        $art->jenis_kelamin = request('jenis_kelamin');
+        $art->agama = request('agama');
+        $art->kota = request('kota');
+        $art->provinsi = request('provinsi');
+        $art->gaji_minimum = request('gaji_minimum');
+        $art->pengalaman_kerja = request('pengalaman_kerja');
+        $art->upload = request('upload');
+
+        $art->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama 
-        return redirect()->route('mahasiswas.index')
-            ->with('success', 'Agensi Berhasil Diupdate');
+        return redirect()->route('lowongans.index')
+            ->with('success', 'Daftar Asister Rumah Tangga Berhasil Diupdate');
     }
     public function destroy($nama)
     {
         //fungsi eloquent untuk menghapus data 
-        $maba = Mahasiswa::all()->where('nama', $nama)->first();
+        $maba = Art::all()->where('nama', $nama)->first();
         $maba->delete();
 
-        return redirect()->route('mahasiswas.index')
-            ->with('success', 'Agensi Berhasil Dihapus');
+        return redirect()->route('lowongans.index')
+            ->with('success', 'ART Berhasil Dihapus');
     }
 };

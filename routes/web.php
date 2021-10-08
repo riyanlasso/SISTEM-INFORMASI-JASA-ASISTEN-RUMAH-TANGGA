@@ -5,9 +5,11 @@ use App\Http\Controllers\agencontroller;
 use App\Http\Controllers\homecontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\logincontroller;
+use App\Http\Controllers\lowongancontroller;
 use App\Http\Controllers\pilihcontroller;
 use App\Http\Controllers\registercontroller;
 use App\Http\Controllers\MahasiswaController;
+
 
 use Illuminate\Support\Facades\Auth;
 
