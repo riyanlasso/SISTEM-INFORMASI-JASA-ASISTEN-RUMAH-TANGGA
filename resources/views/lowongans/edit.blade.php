@@ -1,4 +1,5 @@
-@extends('lowongans.layout') @section('content')
+@extends('lowongans.layout')
+@section('content')
 <div class="container mt-5">
 
     <div class="row justify-content-center align-items-center">

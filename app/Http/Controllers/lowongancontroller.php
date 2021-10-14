@@ -19,7 +19,7 @@ class lowongancontroller extends Controller
         // $posts = Mahasiswa::orderBy('Nim', 'desc')->paginate(6);
         // return view('mahasiswas.index', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 5); //mahasiswas adalah nama folder
 
-        $mahasiswas = Art::where([
+        $lowongans = Art::where([
             ['nama', '!=', Null],
             [function ($query) use ($request) {
                 if (($term = $request->term)) {
@@ -31,7 +31,7 @@ class lowongancontroller extends Controller
             ->paginate(5);
 
         $posts = Art::orderBy('id', 'desc')->paginate(6);
-        return view('lowongans.index', compact('mahasiswas'))
+        return view('lowongans.index', compact('lowongans'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function create()
@@ -68,8 +68,8 @@ class lowongancontroller extends Controller
     public function show($nama)
     {
         //menampilkan detail data dengan menemukan/berdasarkan Nim Mahasiswa
-        $Mahasiswa = Art::all()->where('nama', $nama)->first();
-        return view('lowongans.detail', ['Art' => $Mahasiswa]);
+        $mhs = Art::all()->where('nama', $nama)->first();
+        return view('lowongans.detail', ['Art' => $mhs]);
     }
 
     public function edit($nama)
@@ -110,7 +110,6 @@ class lowongancontroller extends Controller
         $art->gaji_minimum = request('gaji_minimum');
         $art->pengalaman_kerja = request('pengalaman_kerja');
         $art->upload = request('upload');
-
         $art->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama 

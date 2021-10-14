@@ -31,85 +31,87 @@
     </div>
 
     <img id="user" src="{{URL('/img/user.png')}}"></img>
-
-    <div class="row" style="margin-top: 300px;">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left mt-2">
-                <center>
-                    <h2>DAFTAR AGENSI ASISTEN RUMAH TANGGA</h2>
-                </center>
-            </div>
-            <div class="float-right my-2">
-                <a class="btn btn-success" href="{{ route('mahasiswas.create') }}"> Input Agensi</a>
+    <div style="margin:100px">
+        <div class="row" style="margin-top: 300px;">
+            <div class="col-lg-12 margin-tb">
+                <div class="pull-left mt-2">
+                    <center>
+                        <h2>DAFTAR AGENSI ASISTEN RUMAH TANGGA</h2>
+                    </center>
+                </div>
+                <div class="float-right my-2">
+                    <a class="btn btn-success" href="{{ route('mahasiswas.create') }}"> Input Agensi</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- //fitur cari -->
-    <div>
-        <div class="mx-auto pull-right">
-            <div class="">
-                <form action="{{ route('mahasiswas.index') }}" method="GET" role="search">
+        <!-- //fitur cari -->
 
-                    <div class="input-group">
-                        <span class="input-group-btn mr-5 mt-1">
-                            <button class="btn btn-info" type="submit" value="Cari" title="Search mahasiswa">Cari</button>
-                            <span class="fas fa-search"></span>
-                            </button>
-                        </span>
-                        <input type="text" class="form-control mr-2" name="term" placeholder="Search nama" id="term">
-                        <a href="{{ route('mahasiswas.index') }}" class=" mt-1">
-                            <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button" title="Refresh page">Refresh</button>
-                                <span class="fas fa-sync-alt"></span>
+        <div>
+            <div class="mx-auto pull-right">
+                <div class="">
+                    <form action="{{ route('mahasiswas.index') }}" method="GET" role="search">
+
+                        <div class="input-group">
+                            <span class="input-group-btn mr-5 mt-1">
+                                <button class="btn btn-info" type="submit" value="Cari" title="Search mahasiswa">Cari</button>
+                                <span class="fas fa-search"></span>
                                 </button>
                             </span>
-                        </a>
-                    </div>
-                </form>
+                            <input type="text" class="form-control mr-2" name="term" placeholder="Search nama" id="term">
+                            <a href="{{ route('mahasiswas.index') }}" class=" mt-1">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button" title="Refresh page">Refresh</button>
+                                    <span class="fas fa-sync-alt"></span>
+                                    </button>
+                                </span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <!-- sampai sini -->
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+        @endif
+
+        <table class="table table-bordered">
+            <tr>
+                <th>nama</th>
+                <th>alamat</th>
+                <th>email</th>
+                <th>telepon</th>
+                <th>dokumen_SIUP</th>
+                <th>penanggung_jawab</th>
+                <th width="280px">Action</th>
+            </tr>
+            @foreach ($mahasiswas as $Mahasiswa)
+            <tr>
+
+                <td>{{ $Mahasiswa->nama }}</td>
+                <td>{{ $Mahasiswa->alamat }}</td>
+                <td>{{ $Mahasiswa->email }}</td>
+                <td>{{ $Mahasiswa->telepon }}</td>
+                <td>{{ $Mahasiswa->dokumen_SIUP }}</td>
+                <td>{{ $Mahasiswa->penanggung_jawab }}</td>
+                <td>
+                    <form action="{{ route('mahasiswas.destroy',$Mahasiswa->nama) }}" method="POST">
+
+                        <a class="btn btn-info" href="{{ route('mahasiswas.show',$Mahasiswa->nama) }}">Show</a>
+
+                        <a class="btn btn-primary" href="{{ route('mahasiswas.edit',$Mahasiswa->nama) }}">Edit</a>
+                        @csrf
+                        @method('DELETE')
+
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </table>
+        {{$mahasiswas->links('pagination::bootstrap-4')}}
+        @endsection
     </div>
-    <!-- sampai sini -->
-    @if ($message = Session::get('success'))
-    <div class="alert alert-success">
-        <p>{{ $message }}</p>
-    </div>
-    @endif
-
-    <table class="table table-bordered">
-        <tr>
-            <th>nama</th>
-            <th>alamat</th>
-            <th>email</th>
-            <th>telepon</th>
-            <th>dokumen_SIUP</th>
-            <th>penanggung_jawab</th>
-            <th width="280px">Action</th>
-        </tr>
-        @foreach ($mahasiswas as $Mahasiswa)
-        <tr>
-
-            <td>{{ $Mahasiswa->nama }}</td>
-            <td>{{ $Mahasiswa->alamat }}</td>
-            <td>{{ $Mahasiswa->email }}</td>
-            <td>{{ $Mahasiswa->telepon }}</td>
-            <td>{{ $Mahasiswa->dokumen_SIUP }}</td>
-            <td>{{ $Mahasiswa->penanggung_jawab }}</td>
-            <td>
-                <form action="{{ route('mahasiswas.destroy',$Mahasiswa->nama) }}" method="POST">
-
-                    <a class="btn btn-info" href="{{ route('mahasiswas.show',$Mahasiswa->nama) }}">Show</a>
-
-                    <a class="btn btn-primary" href="{{ route('mahasiswas.edit',$Mahasiswa->nama) }}">Edit</a>
-                    @csrf
-                    @method('DELETE')
-
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
-        </tr>
-        @endforeach
-    </table>
-    {{$mahasiswas->links('pagination::bootstrap-4')}}
-    @endsection
