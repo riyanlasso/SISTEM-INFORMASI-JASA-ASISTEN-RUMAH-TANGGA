@@ -29,9 +29,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 // Route::get('/', [logincontroller::class, 'index']);
-// Route::get('/pilih', [pilihcontroller::class, 'index']);
-// Route::get('/register_agen', [registercontroller::class, 'agen']);
-// Route::get('/register_customer', [registercontroller::class, 'customer']);
+
+
 // Route::get('/home', [homecontroller::class, 'index']);
 // Route::get('/loginerror', [errorloginController::class, 'index']);
 
@@ -43,3 +42,6 @@ Route::get('/about', [aboutuscontroller::class, 'index']);
 // Route::resource('agens', agencontroller::class);
 Route::resource('mahasiswas', MahasiswaController::class);
 Route::resource('lowongans', lowongancontroller::class);
+Route::get('/pilih', [pilihcontroller::class, 'index']);
+Route::get('/register_agen', [registercontroller::class, 'agen']);
+Route::get('/register_customer', [registercontroller::class, 'customer']);

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +69,69 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div id="LOGIN">
+        <svg class="Rectangle_5">
+            <rect id="Rectangle_5" rx="98" ry="98" x="0" y="0" width="1526" height="978">
+            </rect>
+        </svg>
+        <img id="morning" src="{{URL('img/morning.png')}}">
+
+        <div id="MYSERVANT_d">
+            <span>MYSERVANT</span>
+        </div>
+        <img id="broom_d" src="{{URL('img/broom.png')}}">
+
+        <img id="pngwingcom_1" src="{{URL('img/pngwingcom_1.png')}}">
+
+        <img id="servant_2" src="{{URL('img/servant_2.png')}}">
+
+        <svg class="Rectangle_6">
+            <rect id="Rectangle_6" rx="36" ry="36" x="0" y="0" width="401" height="480">
+            </rect>
+        </svg>
+
+        <form class="box" method="POST" action="{{ route('login') }}">
+            @csrf
+            <h1>Login</h1>
+            <input type="text" name="email" placeholder="email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" name="" value="Login">
+        </form>
+
+
+        <div id="not_registered">
+            <span>not registered?</span>
+        </div>
+        <div id="REGISTER" class="dropdown">
+            <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    REGISTER
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/register_customer">Register Customer</a>
+                    <a class="dropdown-item" href="/register_agen">Register Agen</a>
+                </div>
+            </div>
+        </div>
+
+        <img id="broom_ed" src="{{URL('img/broom_ed.png')}}">
+
+    </div>
+</body>
+
+</html>
 @endsection
