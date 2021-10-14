@@ -87,7 +87,14 @@ class MahasiswaController extends Controller
         ]);
 
         //fungsi eloquent untuk mengupdate data inputan kita 
-        Mahasiswa::find($nama)->update($request->all());
+        $mhs = Mahasiswa::all()->where('nama', $nama)->first();
+        $mhs->nama = request('nama');
+        $mhs->alamat = request('alamat');
+        $mhs->telepon = request('telepon');
+        $mhs->email = request('email');
+        $mhs->dokumen_SIUP = request('dokumen_SIUP');
+        $mhs->penanggung_jawab = request('penanggung_jawab');
+        $mhs->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama 
         return redirect()->route('mahasiswas.index')
