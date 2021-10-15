@@ -156,7 +156,7 @@
             </rect>
         </svg>
         <div id="REGISTER_CUSTOMER_hq">
-            <span>REGISTER CUSTOMER</span>
+            <span>REGISTER</span>
         </div>
         <img id="broom_hr" src="{{URL('/img/broom_hr.png')}}">
 
