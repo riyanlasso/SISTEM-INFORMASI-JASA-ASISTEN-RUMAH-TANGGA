@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/styleaboutus.css">
-	<title>ABOUT ME</title>
+	<title>ABOUT US</title>
 </head>
 
 <body>
@@ -29,15 +29,9 @@
 			</rect>
 		</svg>
 		<div id="Lorem_Ipsum_is_simply_dummy_te">
-			<span>Lorem Ipsum is simply dummy text of the printing and <br />typesetting industry. Lorem Ipsum has been the <br />industry's standard dummy text ever since the 1500s, <br />when an unknown printer took a galley of type and <br />scrambled it to make a type specimen book. It has <br />survived not only five centuries, but also the leap into <br />electronic typesetting,remaining essentially unchanged. <br />It was popularised in the 1960s with the release of <br />Letraset sheets containing Lorem Ipsum passages, and <br />more recently with desktop publishing software like <br />Aldus PageMaker including versions of Lorem Ipsum.</span>
+			<span>Website ini muncul dari ide salah satu orang di <br /> kelompok kami.<br /> <br />Website MYSERVANT ini akan membantu anda untuk <br />mencari ART dan bisa juga untuk para ART <br />mendapatkan job sesuai dengan keahlian masing - <br /> masing. <br />
 		</div>
-		<svg class="Rectangle_13_fq">
-			<rect id="Rectangle_13_fq" rx="30.5" ry="30.5" x="0" y="0" width="206" height="61">
-			</rect>
-		</svg>
-		<div id="BACK_fr">
-			<span>BACK</span>
-		</div>
+		
 		<img id="Image_3" src="{{URL('/img/Image_3.png')}}">
 
 		<div id="Navbar_ft">
