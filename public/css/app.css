@@ -4374,7 +4374,10 @@ input[type=button].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 15px;
+  margin-right: 600px;
+  margin-top: 300px;
+  margin-left: 100px;
 }
 
 .card-title {

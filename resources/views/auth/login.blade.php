@@ -122,8 +122,8 @@
                     REGISTER
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/register_customer">Register Customer</a>
-                    <a class="dropdown-item" href="/register_agen">Register Agen</a>
+                    <a class="dropdown-item" href="{{ route('register')}}">Register Customer</a>
+                    <a class=" dropdown-item" href="{{ route('register')}}">Register Agen</a>
                 </div>
             </div>
         </div>
