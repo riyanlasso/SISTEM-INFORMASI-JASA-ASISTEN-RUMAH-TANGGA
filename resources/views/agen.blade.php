@@ -110,13 +110,17 @@
 	@extends('agens.layout')
 	<div class="row">
 		<div class="col-lg-12 margin-tb">
+
 			<div class="pull-left mt-2">
 				<h2>DAFTAR AGENSI</h2>
 			</div>
+
 			<div class="float-right my-2">
 				<a class="btn btn-success" href="{{ route('agens.create') }}"> Input Mahasiswa</a>
 			</div>
+
 		</div>
+
 		<div>
 			<div class="mx-auto pull-right">
 				<div class="">
@@ -142,6 +146,7 @@
 			</div>
 		</div>
 	</div>
+
 	@if ($message = Session::get('success'))
 	<div class="alert alert-success">
 		<p>{{ $message }}</p>
