@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'webagen' => [
+            'driver' => 'session',
+            'provider' => 'registeragen',
+        ],
     ],
 
     /*
@@ -69,6 +74,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'registeragen' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Agen::class,
+        ],
     ],
 
     /*

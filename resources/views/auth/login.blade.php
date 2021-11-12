@@ -70,7 +70,6 @@
         </div>
     </div>
 </div> -->
-
 <!DOCTYPE html>
 <html>
 
@@ -104,6 +103,7 @@
             </rect>
         </svg>
 
+
         <form class="box" method="POST" action="{{ route('login') }}">
             @csrf
             <h1>Login</h1>
@@ -123,13 +123,11 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{{ route('register')}}">Register Customer</a>
-                    <a class=" dropdown-item" href="{{ route('register')}}">Register Agen</a>
+                    <a class=" dropdown-item" href="{{ route('daftaragensi.index')}}">Register Agen</a>
                 </div>
             </div>
         </div>
-
         <img id="broom_ed" src="{{URL('img/broom_ed.png')}}">
-
     </div>
 </body>
 

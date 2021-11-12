@@ -65,11 +65,11 @@ class lowongancontroller extends Controller
             ->with('success', 'Lowongan Asisten Rumah Tangga Berhasil Ditambahkan');
     }
 
-    public function show($nama)
+    public function show($id)
     {
         //menampilkan detail data dengan menemukan/berdasarkan Nim Mahasiswa
-        $mhs = Art::all()->where('nama', $nama)->first();
-        return view('lowongans.detail', ['Art' => $mhs]);
+        $Lowongan1 = Art::all()->where('id', $id)->first();
+        return view('lowongans.detail', ['Art' => $Lowongan1]); // 'Art' mewakili variabel $Lowongan
     }
 
     public function edit($nama)

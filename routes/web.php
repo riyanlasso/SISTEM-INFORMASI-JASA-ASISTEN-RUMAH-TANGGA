@@ -9,9 +9,9 @@ use App\Http\Controllers\lowongancontroller;
 use App\Http\Controllers\pilihcontroller;
 use App\Http\Controllers\registercontroller;
 use App\Http\Controllers\MahasiswaController;
-
-
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\registeragensiController;
 
 
 
@@ -36,12 +36,19 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
+
+
+// Route::get('/register_agen', [registercontroller::class, 'agen']);
+// Route::get('/register_customer', [registercontroller::class, 'customer']);
+// Route::resource('agens', agencontroller::class);
+
+//admin
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [aboutuscontroller::class, 'index']);
-// Route::resource('agens', agencontroller::class);
+
 Route::resource('mahasiswas', MahasiswaController::class);
 Route::resource('lowongans', lowongancontroller::class);
-Route::get('/pilih', [pilihcontroller::class, 'index']);
-// Route::get('/register_agen', [registercontroller::class, 'agen']);
-// Route::get('/register_customer', [registercontroller::class, 'customer']);
+Route::resource('daftaragensi', registeragensiController::class);
+
+//customer

@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Agen extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,8 +17,9 @@ class User extends Authenticatable
      *
      * @var string[]
      */
+    protected $guarded = [];
+    protected $table = "registeragen";
     protected $fillable = [
-        'nama',
         'nama_agen',
         'email',
         'password',
@@ -27,6 +28,8 @@ class User extends Authenticatable
         'dokumen',
         'penanggung_jawab',
         'level',
+
+
     ];
 
     /**

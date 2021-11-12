@@ -1,4 +1,4 @@
-@extends('lowongans.layout')
+@extends('mahasiswas.layout')
 @section('content')
 <div id="Navbar_bu">
     <svg class="Rectangle_16_bv">
@@ -12,10 +12,10 @@
         <a href="lowongans" style="color: black;">LOWONGAN</a>
     </div>
     <div id="MYSERVANT_by">
-        <span>MYSERVANT</span>
+        <span>HALAMAN AGENSI</span>
     </div>
     <div id="HOME_bz">
-        <a href="/" style="color: black;">HOME</a>
+        <a href="home" style="color: black;">HOME</a>
     </div>
     <img id="broom_b" src="{{URL('/img/broom_b.png')}}">
 
@@ -31,25 +31,26 @@
     </div>
 
     <img id="user" src="{{URL('/img/user.png')}}"></img>
-    <div style="margin: 100px;">
+    <div style="margin:100px">
         <div class="row" style="margin-top: 300px;">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left mt-2">
                     <center>
-                        <h2>LOWONGAN ASISTEN RUMAH TANGGA</h2>
+                        <h2>DAFTAR AGENSI ASISTEN RUMAH TANGGA</h2>
                     </center>
                 </div>
                 <div class="float-right my-2">
-                    <a class="btn btn-success" href="{{ route('lowongans.create') }}"> DAFTAR </a>
+                    <a class="btn btn-success" href="{{ route('mahasiswas.create') }}"> Input Agensi</a>
                 </div>
             </div>
         </div>
 
         <!-- //fitur cari -->
+
         <div>
             <div class="mx-auto pull-right">
                 <div class="">
-                    <form action="{{ route('lowongans.index') }}" method="GET" role="search">
+                    <form action="{{ route('mahasiswas.index') }}" method="GET" role="search">
 
                         <div class="input-group">
                             <span class="input-group-btn mr-5 mt-1">
@@ -58,7 +59,7 @@
                                 </button>
                             </span>
                             <input type="text" class="form-control mr-2" name="term" placeholder="Search nama" id="term">
-                            <a href="{{ route('lowongans.index') }}" class=" mt-1">
+                            <a href="{{ route('mahasiswas.index') }}" class=" mt-1">
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="button" title="Refresh page">Refresh</button>
                                     <span class="fas fa-sync-alt"></span>
@@ -77,51 +78,5 @@
         </div>
         @endif
 
-        <table class="table table-bordered">
-            <tr>
-                <th>nama</th>
-                <th>alamat</th>
-                <th>telepon</th>
-                <th>jenis_kelamin</th>
-                <th>umur</th>
-                <th>agama</th>
-                <th>kota</th>
-                <th>provinsi</th>
-                <th>gaji_minimum</th>
-                <th>gaji_harapan</th>
-                <th>pengalaman_kerja</th>
-                <th>upload surat pernyataan kerja</th>
-                <th width="280px">Action</th>
-            </tr>
-            @foreach ($lowongans as $Lowongan )
-            <tr>
-                <td>{{ $Lowongan->nama}}</td>
-                <td>{{ $Lowongan->alamat}}</td>
-                <td>{{ $Lowongan->telepon}}</td>
-                <td>{{ $Lowongan->jenis_kelamin}}</td>
-                <td>{{ $Lowongan->umur}}</td>
-                <td>{{ $Lowongan->agama}}</td>
-                <td>{{ $Lowongan->kota}}</td>
-                <td>{{ $Lowongan->provinsi}}</td>
-                <td>{{ $Lowongan->gaji_minimum}}</td>
-                <td>{{ $Lowongan->gaji_harapan}}</td>
-                <td>{{ $Lowongan->pengalaman_kerja}}</td>
-                <td>{{ $Lowongan->upload}}</td>
-                <td>
-                    <form action="{{ route('lowongans.destroy',$Lowongan->nama) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('lowongans.show',$Lowongan->id) }}">Show</a>
-
-                        <a class="btn btn-primary" href="{{ route('lowongans.edit',$Lowongan->nama) }}">Edit</a>
-                        @csrf
-                        @method('DELETE')
-
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
-            </tr>
-            @endforeach
-        </table>
-
-        @endsection
     </div>
