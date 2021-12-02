@@ -116,6 +116,7 @@
         <div id="not_registered">
             <span>not registered?</span>
         </div>
+
         <div id="REGISTER" class="dropdown">
             <div class="dropdown">
                 <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -124,6 +125,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{{ route('register')}}">Register Customer</a>
                     <a class=" dropdown-item" href="{{ route('daftaragensi.index')}}">Register Agen</a>
+                    <a class=" dropdown-item" href="{{ route('daftarart.index')}}">Register ART</a>
                 </div>
             </div>
         </div>

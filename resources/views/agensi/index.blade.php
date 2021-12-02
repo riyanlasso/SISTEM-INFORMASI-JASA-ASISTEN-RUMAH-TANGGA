@@ -1,4 +1,4 @@
-@extends('mahasiswas.layout')
+@extends('agensi.layout')
 @section('content')
 <div id="Navbar_bu">
     <svg class="Rectangle_16_bv">

@@ -28,9 +28,13 @@ class HomeController extends Controller
     public function index()
     {
         if (Auth::user()->level == "2") {
-            return view('home');
+            return view('customers.home');
         } else if (Auth::user()->level == "3") {
             return view('agensi.index');
+        } else if (Auth::user()->level == "1") {
+            return view('home');
+        } else if (Auth::user()->level == "4") {
+            return view('art.home');
         }
     }
 }

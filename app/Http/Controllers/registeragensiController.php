@@ -48,7 +48,6 @@ class registeragensiController extends Controller
         $daftar->penanggung_jawab = Request('penanggung_jawab');
         $daftar->level = Request('level');
         $daftar->save();
-
         return view('agensi.index');
     }
 

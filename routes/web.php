@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\aboutuscontroller;
 use App\Http\Controllers\agencontroller;
+use App\Http\Controllers\artcontroller;
 use App\Http\Controllers\homecontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\logincontroller;
@@ -12,6 +13,7 @@ use App\Http\Controllers\MahasiswaController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\registeragensiController;
+use App\Http\Controllers\customerscontroller;
 
 
 
@@ -36,8 +38,6 @@ use App\Http\Controllers\registeragensiController;
 
 Auth::routes();
 
-
-
 // Route::get('/register_agen', [registercontroller::class, 'agen']);
 // Route::get('/register_customer', [registercontroller::class, 'customer']);
 // Route::resource('agens', agencontroller::class);
@@ -49,6 +49,17 @@ Route::get('/about', [aboutuscontroller::class, 'index']);
 
 Route::resource('mahasiswas', MahasiswaController::class);
 Route::resource('lowongans', lowongancontroller::class);
+
 Route::resource('daftaragensi', registeragensiController::class);
 
 //customer
+Route::get('/homecustomers', [customerscontroller::class, 'index']);
+Route::resource('customers', customerscontroller::class);
+
+Route::get('/aboutcustomers', [customerscontroller::class, 'about']);
+Route::resource('customers_lowongan', customerscontroller::class);
+
+//ART
+Route::resource('daftarart', artcontroller::class);
+Route::get('profil', [artcontroller::class, 'profil']);
+Route::resource('editart', artcontroller::class);

@@ -92,9 +92,9 @@
                 <td>{{ $Mahasiswa->alamat }}</td>
                 <td>{{ $Mahasiswa->telepon }}</td>
                 <td>
-                    <form action="{{ route('mahasiswas.destroy',$Mahasiswa->nama) }}" method="POST">
+                    <form action="{{ route('customers.destroy',$Mahasiswa->nama) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('mahasiswas.show',$Mahasiswa->nama) }}">Select</a>
+                        <a class="btn btn-info" href="{{ route('customers.show',$Mahasiswa->nama) }}">Select</a>
 
                     </form>
                 </td>

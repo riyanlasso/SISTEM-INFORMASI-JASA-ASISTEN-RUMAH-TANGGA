@@ -35,6 +35,15 @@ class AddFieldToUsersTable extends Migration
             $table->dropColumn('username');
             $table->dropColumn('keahlian');
             $table->dropColumn('pengalaman_kerja');
+            $table->dropColumn('jenis_kelamin');
+            $table->dropColumn('umur');
+            $table->dropColumn('agama');
+            $table->dropColumn('kota');
+            $table->dropColumn('provinsi');
+            $table->dropColumn('gaji_minimum');
+            $table->dropColumn('gaji_harapan');
+            $table->dropColumn('pengalaman_kerja');
+            $table->dropColumn('upload');
         });
     }
 }

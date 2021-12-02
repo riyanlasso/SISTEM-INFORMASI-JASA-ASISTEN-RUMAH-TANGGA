@@ -115,3 +115,4 @@
         {{$mahasiswas->links('pagination::bootstrap-4')}}
         @endsection
     </div>
+</div>
