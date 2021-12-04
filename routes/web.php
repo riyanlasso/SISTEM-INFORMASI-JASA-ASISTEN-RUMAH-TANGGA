@@ -14,10 +14,7 @@ use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\registeragensiController;
 use App\Http\Controllers\customerscontroller;
-
-
-
-
+use App\Http\Controllers\kontrakcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,11 +50,12 @@ Route::resource('lowongans', lowongancontroller::class);
 Route::resource('daftaragensi', registeragensiController::class);
 
 //customer
-Route::get('/homecustomers', [customerscontroller::class, 'index']);
+
 Route::resource('customers', customerscontroller::class);
 
 Route::get('/aboutcustomers', [customerscontroller::class, 'about']);
-Route::resource('customers_lowongan', customerscontroller::class);
+Route::resource('kontrak1', kontrakcontroller::class);
+Route::get('kontrak', [customerscontroller::class, 'kontrak'])->name('kontrak');
 
 //ART
 Route::resource('daftarart', artcontroller::class);

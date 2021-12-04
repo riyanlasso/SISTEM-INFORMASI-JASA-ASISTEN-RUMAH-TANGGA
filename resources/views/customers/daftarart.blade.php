@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Daftar ART oke</title>
+    <title>Daftar ART</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384- Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="an onymous">
     <script src="https://code.jquery.com/jquery- 3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="an onymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/poppe r.min.js" integrity="sha384- Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="an onymous"></script>
@@ -437,18 +437,10 @@
                         <td>{{ $Lowongan->alamat}}</td>
                         <td>{{ $Lowongan->telepon}}</td>
                         <td>{{ $Lowongan->jenis_kelamin}}</td>
+                        <td>{{ $Lowongan->kota}}</td>
                         <td>{{ $Lowongan->pengalaman_kerja}}</td>
                         <td>
-                            <form action="{{ route('lowongans.destroy',$Lowongan->nama) }}" method="POST">
-
-                                <a class="btn btn-info" href="{{ route('lowongans.show',$Lowongan->id) }}">Show</a>
-
-                                <a class="btn btn-primary" href="{{ route('lowongans.edit',$Lowongan->nama) }}">Edit</a>
-                                @csrf
-                                @method('DELETE')
-
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
+                            <a class="btn btn-info" href="{{ route('kontrak1.show',$Lowongan->nama)}}">Transaksi</a>
                         </td>
                     </tr>
                     @endforeach

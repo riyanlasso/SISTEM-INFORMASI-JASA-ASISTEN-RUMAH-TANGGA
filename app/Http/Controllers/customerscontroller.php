@@ -78,7 +78,7 @@ class customerscontroller extends Controller
             ->paginate(5);
 
         $posts = Art::orderBy('id', 'desc')->paginate(6);
-        return view('lowongans.index', compact('lowongans'))
+        return view('customers.daftarart', compact('lowongans'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -125,26 +125,9 @@ class customerscontroller extends Controller
         return redirect()->route('mahasiswas.index')
             ->with('success', 'Agensi Berhasil Dihapus');
     }
-    public function index1(Request $request)
+    public function kontrak($nama)
     {
-        //fungsi eloquent menampilkan data menggunakan pagination
-        // $mahasiswas = Mahasiswa::all(); // Mengambil semua isi tabel
-        // $posts = Mahasiswa::orderBy('Nim', 'desc')->paginate(6);
-        // return view('mahasiswas.index', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 5); //mahasiswas adalah nama folder
-
-        $lowongans = Art::where([
-            ['nama', '!=', Null],
-            [function ($query) use ($request) {
-                if (($term = $request->term)) {
-                    $query->orWhere('nama', 'LIKE', '%' . $term . '%')->get();
-                }
-            }]
-        ])
-            ->orderBy("nama", "asc")
-            ->paginate(5);
-
-        $posts = Art::orderBy('id', 'desc')->paginate(6);
-        return view('lowongans.index', compact('lowongans'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        $Lowongan1 = Art::all()->where('nama', $nama)->first();
+        return view('customers.kontrak', ['Art' => $Lowongan1]);
     }
 };
